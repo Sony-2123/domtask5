@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .butt{
+font-size: 30px;
+margin-left: 300px;
+margin-bottom: 40px;
+border-radius: 40px;
+width:300px;
+background-color: aqua;
+color: brown;
+     }
+     .h1{
+        font-size:50px ;
+        color: brown;
+        text-align: center;
+     }
+     
+    </style>
+</head>
+<body>
+   
+
+    <script>
+var h1=document.createElement("h1")
+document.body.appendChild(h1)
+h1.innerText="Task using bom model........"
+h1.setAttribute("class","h1")
+
+var but1=document.createElement("button")
+document.body.appendChild(but1)
+
+but1.innerText="REGISTER HERE"
+but1.setAttribute("class","butt")
+but1.addEventListener("click",
+function(){
+var a=prompt("Enter user name")
+var b=prompt("Enter your password")
+var c=prompt("Enter your mother name")
+var d=prompt("Enter your father name")
+var e=prompt("Enter mobile number")
+  
+window.localStorage.setItem("USER NAME",a)
+window.localStorage.setItem("PASSWORD",b)
+window.localStorage.setItem("MOTHER NAME",c)
+window.localStorage.setItem("FATHER NAME",d)
+window.localStorage.setItem("MOBILE NO",e)
+})
+var but2=document.createElement("button")
+document.body.appendChild(but2)
+but2.innerText="SEE USER DETAILS"
+but2.setAttribute("class","butt")
+but2.addEventListener("click",function () {
+   window.location.assign("./tablebomtask5.html")
+})
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

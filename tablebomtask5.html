@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     table,tr,td{
+        border: 1px solid black;
+        height: 10px;
+        width: 400px;
+        margin-left: 500px;
+     }
+     .a{
+        color:red;
+        font-size: 20px;
+        text-align: center;
+     }
+     .b{
+        color:black;
+        font-size: 20px;
+        text-align: center;
+
+     }
+    </style>
+</head>
+<body>
+    <script>
+var tab=document.createElement("table");
+document.body.appendChild(tab);
+var tr1=document.createElement("tr");
+tab.appendChild(tr1);
+var td1=document.createElement("td");
+td1.innerText="USER NAME"
+td1.setAttribute("class","a")
+var td2=document.createElement("td");
+td2.innerText=window.localStorage.getItem("USER NAME");
+td2.setAttribute("class","b");
+tr1.appendChild(td1);
+tr1.appendChild(td2);
+var tr2=document.createElement("tr");
+tab.appendChild(tr2);
+var td3=document.createElement("td");
+td3.setAttribute("class","a")
+td3.innerText="PASSWORD"
+var td4=document.createElement("td");
+td4.setAttribute("class","b");
+td4.innerText=window.localStorage.getItem("PASSWORD");
+tr2.appendChild(td3);
+tr2.appendChild(td4);
+
+var tr12=document.createElement("tr");
+tab.appendChild(tr12);
+var td13=document.createElement("td");
+td13.setAttribute("class","a")
+td13.innerText="MOTHER NAME"
+var td14=document.createElement("td");
+td14.setAttribute("class","b");
+td14.innerText=window.localStorage.getItem("MOTHER NAME");
+tr12.appendChild(td13);
+tr12.appendChild(td14);
+
+var tr22=document.createElement("tr");
+tab.appendChild(tr22);
+var td33=document.createElement("td");
+td33.setAttribute("class","a")
+td33.innerText="FATHER NAME"
+var td44=document.createElement("td");
+td44.setAttribute("class","b");
+td44.innerText=window.localStorage.getItem("FATHER NAME");
+tr22.appendChild(td33);
+tr22.appendChild(td44);
+
+var tr8=document.createElement("tr");
+tab.appendChild(tr8);
+var td9=document.createElement("td");
+td9.setAttribute("class","a")
+td9.innerText="MOBILE NO"
+var td7=document.createElement("td");
+td7.setAttribute("class","b");
+td7.innerText=window.localStorage.getItem("MOBILE NO");
+tr8.appendChild(td9);
+tr8.appendChild(td7);
+
+
+
+
+console.log(tab);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
